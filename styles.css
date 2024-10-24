@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg,rgb(31, 2, 70),rgb(2, 43, 56),rgb(2, 2, 55));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(232, 249, 2);
+}
+.container h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.con{
+    color : #ff0000;
+}
+textarea{
+    width: 500px;
+    height: 250px;
+    background: #435f58;
+    color: #ddd;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+textarea::placeholder{
+    color: rgb(229, 227, 227);
+}
+.row{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background: #ff0000;
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background: #435f58;;
+    height: 50px;
+    width: 300px;
+    padding :0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    background-image: url(gridicons--dropdown.png);
+    appearance: none;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: calc(100% - 20px);
+    background-position-y:   10px;
+}
+@media only screen and (min-width: 300px) and (max-width: 767px){
+    h1{
+        align-items: center;
+    }
+    textarea{
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 300px;
+        height: 250px;
+        margin: auto;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .row{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    button{
+        margin: auto;
+    }
+}
